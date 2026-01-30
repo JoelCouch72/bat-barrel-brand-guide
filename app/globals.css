@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/* ============================================
+   Bat & Barrel Brand Guide
+   Design Tokens & Theme
+   ============================================ */
+
+:root {
+  /* Brand Colors */
+  --color-black: #1a1a1a;
+  --color-logo-red: #843127;
+  --color-logo-red-dark: #6a2820;
+  --color-logo-red-light: #a34234;
+
+  /* Warm Neutrals */
+  --color-infield-tan: #d4c4a8;
+  --color-infield-light: #e8dcc8;
+  --color-leather: #5c4033;
+  --color-cream: #faf7f2;
+
+  /* Grays */
+  --color-gray-200: #e5e5e5;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-white: #ffffff;
+}
+
+@theme inline {
+  /* Brand Colors */
+  --color-brand-black: var(--color-black);
+  --color-logo-red: var(--color-logo-red);
+  --color-logo-red-dark: var(--color-logo-red-dark);
+  --color-logo-red-light: var(--color-logo-red-light);
+
+  /* Warm Neutrals */
+  --color-infield-tan: var(--color-infield-tan);
+  --color-infield-light: var(--color-infield-light);
+  --color-leather: var(--color-leather);
+  --color-cream: var(--color-cream);
+
+  /* Fonts */
+  --font-display: var(--font-display);
+  --font-script: var(--font-script);
+  --font-body: var(--font-body);
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utilities */
+.font-display {
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.font-script {
+  font-family: var(--font-script), cursive;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.font-body {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-infield-tan);
+  color: var(--color-black);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
