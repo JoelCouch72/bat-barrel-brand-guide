@@ -60,7 +60,7 @@ export default function BrandGuide() {
       <section className="bg-brand-black min-h-screen flex items-center justify-center pt-16">
         <div className="text-center px-6">
           <Image
-            src="/logo/Full Logo White.svg"
+            src="/logo/full-logo-white.svg"
             alt="Bat & Barrel"
             width={400}
             height={200}
@@ -347,7 +347,7 @@ export default function BrandGuide() {
             <div className="bg-white/5 p-8 rounded-lg text-center">
               <div className="h-32 flex items-center justify-center mb-6">
                 <Image
-                  src="/logo/Full Logo White.svg"
+                  src="/logo/full-logo-white.svg"
                   alt="Full Logo"
                   width={200}
                   height={100}
@@ -366,7 +366,7 @@ export default function BrandGuide() {
             <div className="bg-white/5 p-8 rounded-lg text-center">
               <div className="h-32 flex items-center justify-center mb-6">
                 <Image
-                  src="/logo/B-N-B Logo White.svg"
+                  src="/logo/bnb-logo-white.svg"
                   alt="B-N-B Logo"
                   width={200}
                   height={100}
@@ -385,7 +385,7 @@ export default function BrandGuide() {
             <div className="bg-white/5 p-8 rounded-lg text-center">
               <div className="h-32 flex items-center justify-center mb-6">
                 <Image
-                  src="/logo/Stencil.svg"
+                  src="/logo/stencil.svg"
                   alt="Stencil"
                   width={100}
                   height={100}
@@ -405,7 +405,7 @@ export default function BrandGuide() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
               <Image
-                src="/logo/Full Logo Black.svg"
+                src="/logo/full-logo-black.svg"
                 alt="Logo on light"
                 width={200}
                 height={100}
@@ -414,7 +414,7 @@ export default function BrandGuide() {
             </div>
             <div className="bg-logo-red p-12 rounded-lg flex items-center justify-center">
               <Image
-                src="/logo/Full Logo White.svg"
+                src="/logo/full-logo-white.svg"
                 alt="Logo on red"
                 width={200}
                 height={100}
@@ -584,7 +584,7 @@ export default function BrandGuide() {
       <footer className="py-12 px-6 bg-brand-black border-t border-white/10">
         <div className="max-w-5xl mx-auto text-center">
           <Image
-            src="/logo/Full Logo White.svg"
+            src="/logo/full-logo-white.svg"
             alt="Bat & Barrel"
             width={120}
             height={60}

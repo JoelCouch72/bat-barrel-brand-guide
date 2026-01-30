@@ -18,7 +18,7 @@ export function Navigation() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo/Full Logo White.svg"
+            src="/logo/full-logo-white.svg"
             alt="Bat & Barrel"
             width={120}
             height={40}
