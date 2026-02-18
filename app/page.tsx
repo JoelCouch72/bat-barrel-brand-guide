@@ -394,6 +394,44 @@ export default function BrandGuide() {
                 Favicons, app icons, small marks
               </p>
             </div>
+
+            {/* BNB Banner */}
+            <div className="bg-white/5 p-8 rounded-lg text-center">
+              <div className="h-32 flex items-center justify-center mb-6">
+                <Image
+                  src="/logo/BNB%20Banner.svg"
+                  alt="BNB Banner"
+                  width={300}
+                  height={150}
+                  className="max-h-24 w-auto"
+                />
+              </div>
+              <h4 className="font-display text-lg text-white tracking-wider mb-2">
+                BNB BANNER
+              </h4>
+              <p className="text-infield-tan text-sm">
+                Wide-format — banners, headers, signage
+              </p>
+            </div>
+
+            {/* Training Logo */}
+            <div className="bg-white/5 p-8 rounded-lg text-center">
+              <div className="h-32 flex items-center justify-center mb-6">
+                <Image
+                  src="/logo/Training%20Logo%20Black.svg"
+                  alt="Training Logo"
+                  width={300}
+                  height={150}
+                  className="max-h-24 w-auto"
+                />
+              </div>
+              <h4 className="font-display text-lg text-white tracking-wider mb-2">
+                TRAINING LOGO
+              </h4>
+              <p className="text-infield-tan text-sm">
+                Training programs, sub-brand applications
+              </p>
+            </div>
           </div>
 
           {/* Logo on backgrounds */}
@@ -401,7 +439,7 @@ export default function BrandGuide() {
             <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
               <Image
                 src="/logo/full-logo-black.svg"
-                alt="Logo on light"
+                alt="Full logo on light background"
                 width={200}
                 height={100}
                 className="max-h-16 w-auto"
@@ -410,7 +448,25 @@ export default function BrandGuide() {
             <div className="bg-logo-red p-12 rounded-lg flex items-center justify-center">
               <Image
                 src="/logo/full-logo-white.svg"
-                alt="Logo on red"
+                alt="Full logo on red background"
+                width={200}
+                height={100}
+                className="max-h-16 w-auto"
+              />
+            </div>
+            <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
+              <Image
+                src="/logo/bnb-logo-black.svg"
+                alt="B-N-B logo black variant"
+                width={200}
+                height={100}
+                className="max-h-16 w-auto"
+              />
+            </div>
+            <div className="bg-brand-black border border-white/10 p-12 rounded-lg flex items-center justify-center">
+              <Image
+                src="/logo/bnb-logo-white.svg"
+                alt="B-N-B logo on dark background"
                 width={200}
                 height={100}
                 className="max-h-16 w-auto"
