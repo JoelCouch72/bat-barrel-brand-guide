@@ -93,25 +93,24 @@ export default function BrandGuide() {
               <ul className="space-y-3 text-leather">
                 <li className="flex items-start gap-3">
                   <span className="text-logo-red mt-1">&#10003;</span>
-                  Community-rooted — local owners, built for their kids and
-                  everyone else&apos;s
+                  Community-rooted — local owners, built for Upland and
+                  surrounding communities — designed for athletes, teams, and
+                  families
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-logo-red mt-1">&#10003;</span>
-                  Authentic — hand-painted logo on the wall, not vinyl wraps
+                  Athletic — built for year-round reps, focused on development,
+                  fundamentals, and putting in real work
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-logo-red mt-1">&#10003;</span>
-                  Playful but grounded — it&apos;s a game, have fun, but respect
-                  the craft
+                  Modern training facility with timeless atmosphere — offering
+                  top-tier equipment all under one roof
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-logo-red mt-1">&#10003;</span>
-                  Athletic, not corporate
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-logo-red mt-1">&#10003;</span>
-                  Accessible, not exclusive
+                  Accessible, not exclusive — built for players of all ages and
+                  skill levels — from beginners to serious ballplayers
                 </li>
               </ul>
             </div>
@@ -121,10 +120,6 @@ export default function BrandGuide() {
                 WHAT WE AVOID
               </h3>
               <ul className="space-y-3 text-leather">
-                <li className="flex items-start gap-3">
-                  <span className="text-brand-black/40 mt-1">&#10007;</span>
-                  Corporate &quot;big box&quot; training facility aesthetic
-                </li>
                 <li className="flex items-start gap-3">
                   <span className="text-brand-black/40 mt-1">&#10007;</span>
                   Money-first messaging
