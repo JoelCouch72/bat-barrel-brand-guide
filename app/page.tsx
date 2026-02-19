@@ -337,33 +337,34 @@ export default function BrandGuide() {
             dark
           />
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {/* Full Logo */}
-            <div className="bg-white/5 p-8 rounded-lg text-center">
-              <div className="h-32 flex items-center justify-center mb-6">
-                <Image
-                  src="/logo/full-logo-white.svg"
-                  alt="Full Logo"
-                  width={200}
-                  height={100}
-                  className="max-h-24 w-auto"
-                />
-              </div>
-              <h4 className="font-display text-lg text-white tracking-wider mb-2">
-                FULL LOGO
-              </h4>
-              <p className="text-infield-tan text-sm">
-                Primary logo — signage, headers, hero areas
-              </p>
+          {/* Full Logo — Primary, displayed large */}
+          <div className="bg-white/5 p-12 rounded-lg text-center mb-16">
+            <div className="h-64 flex items-center justify-center mb-8">
+              <Image
+                src="/logo/full-logo-white.svg"
+                alt="Full Logo"
+                width={500}
+                height={500}
+                className="max-h-56 w-auto"
+              />
             </div>
+            <h4 className="font-display text-xl text-white tracking-wider mb-2">
+              FULL LOGO
+            </h4>
+            <p className="text-infield-tan text-sm">
+              Primary logo — signage, headers, hero areas
+            </p>
+          </div>
 
-            {/* B-N-B Logo */}
+          {/* Secondary Logo Variants */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {/* B-N-B Wordmark */}
             <div className="bg-white/5 p-8 rounded-lg text-center">
               <div className="h-32 flex items-center justify-center mb-6">
                 <Image
                   src="/logo/bnb-logo-white.svg"
-                  alt="B-N-B Logo"
-                  width={200}
+                  alt="B-N-B Wordmark"
+                  width={250}
                   height={100}
                   className="max-h-24 w-auto"
                 />
@@ -382,8 +383,8 @@ export default function BrandGuide() {
                 <Image
                   src="/logo/stencil.svg"
                   alt="Stencil"
-                  width={100}
-                  height={100}
+                  width={120}
+                  height={150}
                   className="max-h-24 w-auto"
                 />
               </div>
@@ -395,81 +396,109 @@ export default function BrandGuide() {
               </p>
             </div>
 
-            {/* BNB Banner */}
+            {/* Full Logo Training */}
             <div className="bg-white/5 p-8 rounded-lg text-center">
               <div className="h-32 flex items-center justify-center mb-6">
                 <Image
-                  src="/logo/BNB%20Banner.svg"
-                  alt="BNB Banner"
-                  width={300}
-                  height={150}
+                  src="/logo/full-logo-training-white.png"
+                  alt="Full Logo Training"
+                  width={200}
+                  height={200}
                   className="max-h-24 w-auto"
                 />
               </div>
               <h4 className="font-display text-lg text-white tracking-wider mb-2">
-                BNB BANNER
+                FULL LOGO TRAINING
               </h4>
               <p className="text-infield-tan text-sm">
-                Wide-format — banners, headers, signage
-              </p>
-            </div>
-
-            {/* Training Logo */}
-            <div className="bg-white/5 p-8 rounded-lg text-center">
-              <div className="h-32 flex items-center justify-center mb-6">
-                <Image
-                  src="/logo/Training%20Logo%20Black.svg"
-                  alt="Training Logo"
-                  width={300}
-                  height={150}
-                  className="max-h-24 w-auto"
-                />
-              </div>
-              <h4 className="font-display text-lg text-white tracking-wider mb-2">
-                TRAINING LOGO
-              </h4>
-              <p className="text-infield-tan text-sm">
-                Training programs, sub-brand applications
+                Training programs, facilities, sub-brand
               </p>
             </div>
           </div>
 
-          {/* Logo on backgrounds */}
-          <div className="grid md:grid-cols-2 gap-8">
+          {/* Training Logo — wide format */}
+          <div className="bg-white/5 p-8 rounded-lg text-center mb-16">
+            <div className="h-40 flex items-center justify-center mb-6">
+              <Image
+                src="/logo/training-logo-black.png"
+                alt="Training Logo"
+                width={600}
+                height={250}
+                className="max-h-32 w-auto"
+              />
+            </div>
+            <h4 className="font-display text-lg text-white tracking-wider mb-2">
+              TRAINING LOGO
+            </h4>
+            <p className="text-infield-tan text-sm">
+              Wide-format training mark — print materials, banners
+            </p>
+          </div>
+
+          {/* Logo on Backgrounds */}
+          <h3 className="font-display text-xl text-infield-tan tracking-wider mb-6">
+            ON BACKGROUNDS
+          </h3>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
               <Image
                 src="/logo/full-logo-black.svg"
                 alt="Full logo on light background"
-                width={200}
-                height={100}
-                className="max-h-16 w-auto"
+                width={280}
+                height={280}
+                className="max-h-28 w-auto"
+              />
+            </div>
+            <div className="bg-brand-black border border-white/10 p-12 rounded-lg flex items-center justify-center">
+              <Image
+                src="/logo/full-logo-white.svg"
+                alt="Full logo on dark background"
+                width={280}
+                height={280}
+                className="max-h-28 w-auto"
               />
             </div>
             <div className="bg-logo-red p-12 rounded-lg flex items-center justify-center">
               <Image
-                src="/logo/full-logo-white.svg"
-                alt="Full logo on red background"
-                width={200}
+                src="/logo/bnb-logo-white.svg"
+                alt="Wordmark on red background"
+                width={280}
                 height={100}
                 className="max-h-16 w-auto"
               />
             </div>
             <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
               <Image
-                src="/logo/bnb-logo-black.svg"
-                alt="B-N-B logo black variant"
-                width={200}
-                height={100}
-                className="max-h-16 w-auto"
+                src="/logo/full-logo-training-black.png"
+                alt="Training logo on light background"
+                width={280}
+                height={280}
+                className="max-h-28 w-auto"
               />
             </div>
-            <div className="bg-brand-black border border-white/10 p-12 rounded-lg flex items-center justify-center">
+          </div>
+
+          {/* Self-Contained Lockups */}
+          <h3 className="font-display text-xl text-infield-tan tracking-wider mb-6">
+            LOCKUP VARIANTS
+          </h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="rounded-lg overflow-hidden">
               <Image
-                src="/logo/bnb-logo-white.svg"
-                alt="B-N-B logo on dark background"
-                width={200}
-                height={100}
-                className="max-h-16 w-auto"
+                src="/logo/bnb-logo-black.svg"
+                alt="B-N-B Logo Black lockup"
+                width={600}
+                height={340}
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src="/logo/bnb-logo-red.svg"
+                alt="B-N-B Logo Red lockup"
+                width={600}
+                height={340}
+                className="w-full h-auto"
               />
             </div>
           </div>
