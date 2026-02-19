@@ -381,7 +381,7 @@ export default function BrandGuide() {
             <div className="bg-white/5 p-8 rounded-lg text-center">
               <div className="h-32 flex items-center justify-center mb-6">
                 <Image
-                  src="/logo/stencil.svg"
+                  src="/logo/stencil.png"
                   alt="Stencil"
                   width={120}
                   height={150}
@@ -397,20 +397,20 @@ export default function BrandGuide() {
             </div>
 
             {/* Full Logo Training */}
-            <div className="bg-white/5 p-8 rounded-lg text-center">
+            <div className="bg-cream p-8 rounded-lg text-center">
               <div className="h-32 flex items-center justify-center mb-6">
                 <Image
-                  src="/logo/full-logo-training-white.png"
+                  src="/logo/full-logo-training-black.png"
                   alt="Full Logo Training"
                   width={200}
                   height={200}
                   className="max-h-24 w-auto"
                 />
               </div>
-              <h4 className="font-display text-lg text-white tracking-wider mb-2">
+              <h4 className="font-display text-lg text-brand-black tracking-wider mb-2">
                 FULL LOGO TRAINING
               </h4>
-              <p className="text-infield-tan text-sm">
+              <p className="text-leather text-sm">
                 Training programs, facilities, sub-brand
               </p>
             </div>
@@ -439,7 +439,7 @@ export default function BrandGuide() {
           <h3 className="font-display text-xl text-infield-tan tracking-wider mb-6">
             ON BACKGROUNDS
           </h3>
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
               <Image
                 src="/logo/full-logo-black.svg"
@@ -465,15 +465,6 @@ export default function BrandGuide() {
                 width={280}
                 height={100}
                 className="max-h-16 w-auto"
-              />
-            </div>
-            <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
-              <Image
-                src="/logo/full-logo-training-black.png"
-                alt="Training logo on light background"
-                width={280}
-                height={280}
-                className="max-h-28 w-auto"
               />
             </div>
           </div>
