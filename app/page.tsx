@@ -397,20 +397,20 @@ export default function BrandGuide() {
             </div>
 
             {/* Full Logo Training */}
-            <div className="bg-cream p-8 rounded-lg text-center">
+            <div className="bg-white/5 p-8 rounded-lg text-center">
               <div className="h-32 flex items-center justify-center mb-6">
                 <Image
-                  src="/logo/full-logo-training-black.png"
+                  src="/logo/full-logo-training-white-txt.png"
                   alt="Full Logo Training"
                   width={200}
                   height={200}
                   className="max-h-24 w-auto"
                 />
               </div>
-              <h4 className="font-display text-lg text-brand-black tracking-wider mb-2">
+              <h4 className="font-display text-lg text-white tracking-wider mb-2">
                 FULL LOGO TRAINING
               </h4>
-              <p className="text-leather text-sm">
+              <p className="text-infield-tan text-sm">
                 Training programs, facilities, sub-brand
               </p>
             </div>
