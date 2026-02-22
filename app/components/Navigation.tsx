@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -29,7 +28,7 @@ export function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-black">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link
+        <a
           href="#"
           className={`flex items-center transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         >
@@ -41,16 +40,16 @@ export function Navigation() {
             className="h-10 w-auto"
             priority
           />
-        </Link>
+        </a>
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.href}
               href={item.href}
               className="text-infield-tan hover:text-white transition-colors text-sm tracking-wider uppercase"
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </div>
       </div>
