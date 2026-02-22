@@ -798,6 +798,51 @@ export default function BrandGuide() {
                     switch to the Wordmark or Stencil below that threshold.
                   </p>
                 </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-3">
+                    DOWNLOADS
+                  </h4>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-faded text-xs mb-1.5">White variant</p>
+                      <div className="flex gap-2">
+                        <a
+                          href="/logo/full-logo-white.svg"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          SVG
+                        </a>
+                        <a
+                          href="/logo/full-logo-white.png"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          PNG
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-faded text-xs mb-1.5">Dark variant</p>
+                      <div className="flex gap-2">
+                        <a
+                          href="/logo/full-logo-black.svg"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          SVG
+                        </a>
+                        <a
+                          href="/logo/full-logo-black.png"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          PNG
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -915,6 +960,72 @@ export default function BrandGuide() {
                     remains legible at smaller sizes than the full logo.
                   </p>
                 </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-3">
+                    DOWNLOADS
+                  </h4>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-faded text-xs mb-1.5">
+                        White (transparent)
+                      </p>
+                      <div className="flex gap-2">
+                        <a
+                          href="/logo/bnb-logo-white.svg"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          SVG
+                        </a>
+                        <a
+                          href="/logo/bnb-logo-white.png"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          PNG
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-faded text-xs mb-1.5">Black lockup</p>
+                      <div className="flex gap-2">
+                        <a
+                          href="/logo/bnb-logo-black.svg"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          SVG
+                        </a>
+                        <a
+                          href="/logo/bnb-logo-black.png"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          PNG
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-faded text-xs mb-1.5">Red lockup</p>
+                      <div className="flex gap-2">
+                        <a
+                          href="/logo/bnb-logo-red.svg"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          SVG
+                        </a>
+                        <a
+                          href="/logo/bnb-logo-red.png"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          PNG
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1016,6 +1127,27 @@ export default function BrandGuide() {
                   <p className="text-infield-tan text-sm leading-relaxed">
                     24px &mdash; this is the go-to mark at micro scale.
                   </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-3">
+                    DOWNLOADS
+                  </h4>
+                  <div className="flex gap-2">
+                    <a
+                      href="/logo/stencil.svg"
+                      download
+                      className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                    >
+                      SVG
+                    </a>
+                    <a
+                      href="/logo/stencil.png"
+                      download
+                      className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                    >
+                      PNG
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1134,6 +1266,41 @@ export default function BrandGuide() {
                     descriptor text must remain legible.
                   </p>
                 </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-3">
+                    DOWNLOADS
+                  </h4>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-faded text-xs mb-1.5">
+                        White text (dark backgrounds)
+                      </p>
+                      <div className="flex gap-2">
+                        <a
+                          href="/logo/full-logo-training-white-txt.png"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          PNG
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-faded text-xs mb-1.5">
+                        Dark text (light backgrounds)
+                      </p>
+                      <div className="flex gap-2">
+                        <a
+                          href="/logo/full-logo-training-white.png"
+                          download
+                          className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                        >
+                          PNG
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1221,6 +1388,20 @@ export default function BrandGuide() {
                       250px wide on screen. 3&quot; wide in print. The wide
                       aspect ratio requires generous horizontal space.
                     </p>
+                  </div>
+                  <div>
+                    <h4 className="font-display text-sm text-white tracking-wider mb-3">
+                      DOWNLOADS
+                    </h4>
+                    <div className="flex gap-2">
+                      <a
+                        href="/logo/training-logo-black.png"
+                        download
+                        className="bg-white/10 text-infield-tan text-xs font-mono px-3 py-1 rounded hover:bg-white/20 transition-colors inline-block"
+                      >
+                        PNG
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
