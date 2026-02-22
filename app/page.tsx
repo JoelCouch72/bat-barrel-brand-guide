@@ -154,38 +154,34 @@ export default function BrandGuide() {
         <div className="max-w-5xl mx-auto">
           <SectionHeader
             title="COLOR PALETTE"
-            subtitle="Core brand colors used across all materials"
+            subtitle="Eight colors, their roles, and how to use them"
             dark
           />
 
-          <div className="mb-16">
-            <h3 className="font-display text-xl text-infield-tan tracking-wider mb-6">
-              PRIMARY COLORS
-            </h3>
+          {/* Full Palette Overview — 2 rows of 4, matching PDF layout */}
+          <div className="space-y-6 mb-24">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <ColorSwatch name="BLACK" hex="#1a1a1a" bgClass="bg-brand-black" />
+              <ColorSwatch
+                name="PRIMARY DARK"
+                hex="#1a1a1a"
+                bgClass="bg-brand-black"
+              />
+              <ColorSwatch
+                name="SECONDARY DARK"
+                hex="#252525"
+                bgClass="bg-secondary-dark"
+              />
+              <ColorSwatch
+                name="FADED"
+                hex="#787878"
+                bgClass="bg-faded"
+              />
               <ColorSwatch
                 name="LOGO RED"
                 hex="#843127"
                 bgClass="bg-logo-red"
               />
-              <ColorSwatch
-                name="LOGO RED DARK"
-                hex="#6a2820"
-                bgClass="bg-logo-red-dark"
-              />
-              <ColorSwatch
-                name="LOGO RED LIGHT"
-                hex="#a34234"
-                bgClass="bg-logo-red-light"
-              />
             </div>
-          </div>
-
-          <div>
-            <h3 className="font-display text-xl text-infield-tan tracking-wider mb-6">
-              WARM NEUTRALS
-            </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <ColorSwatch
                 name="INFIELD TAN"
@@ -200,39 +196,393 @@ export default function BrandGuide() {
                 textClass="text-brand-black"
               />
               <ColorSwatch
-                name="LEATHER"
-                hex="#5c4033"
-                bgClass="bg-leather"
-              />
-              <ColorSwatch
                 name="CREAM"
                 hex="#faf7f2"
                 bgClass="bg-cream"
                 textClass="text-brand-black"
               />
+              <ColorSwatch
+                name="LEATHER"
+                hex="#5c4033"
+                bgClass="bg-leather"
+              />
             </div>
           </div>
 
-          <div className="mt-16 p-8 bg-white/5 rounded-lg">
-            <h3 className="font-display text-xl text-white tracking-wider mb-4">
-              COLOR ROLES
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6 text-infield-tan">
-              <div>
-                <p className="text-white font-medium mb-1">Black = Primary Dark</p>
-                <p className="text-sm">Backgrounds, text, large areas</p>
+          {/* --- DARK FOUNDATION --- */}
+          <div className="mb-24">
+            <div className="mb-8">
+              <p className="font-display text-sm text-logo-red tracking-widest mb-1">
+                COLOR ROLE
+              </p>
+              <h3 className="font-display text-3xl text-white tracking-wider mb-2">
+                DARK FOUNDATION
+              </h3>
+              <p className="text-infield-tan">
+                Primary Dark, Secondary Dark, Faded
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-5 gap-8">
+              <div className="md:col-span-3 space-y-3">
+                <div className="h-24 bg-brand-black border border-white/10 rounded-lg flex items-end p-4">
+                  <span className="text-white/60 font-mono text-xs">
+                    #1a1a1a &mdash; Primary Dark
+                  </span>
+                </div>
+                <div className="h-24 bg-secondary-dark rounded-lg flex items-end p-4">
+                  <span className="text-white/60 font-mono text-xs">
+                    #252525 &mdash; Secondary Dark
+                  </span>
+                </div>
+                <div className="h-24 bg-faded rounded-lg flex items-end p-4">
+                  <span className="text-white font-mono text-xs">
+                    #787878 &mdash; Faded
+                  </span>
+                </div>
               </div>
-              <div>
-                <p className="text-white font-medium mb-1">Red = Accent Color</p>
-                <p className="text-sm">Marks, emphasis, CTAs</p>
-              </div>
-              <div>
-                <p className="text-white font-medium mb-1">
-                  Warm Neutrals = Supporting
-                </p>
-                <p className="text-sm">Tans, leather, cream for texture</p>
+
+              <div className="md:col-span-2 space-y-6">
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHAT THEY ARE
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    The structural backbone of the brand. Three values of dark
+                    that create depth and hierarchy without introducing color.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    HOW TO USE
+                  </h4>
+                  <ul className="text-infield-tan text-sm space-y-3">
+                    <li>
+                      <strong className="text-white">Primary Dark</strong>
+                      <span className="text-faded ml-1.5 font-mono text-xs">
+                        #1a1a1a
+                      </span>
+                      <br />
+                      Page backgrounds, hero sections, primary text on light
+                      surfaces. The default &quot;black.&quot;
+                    </li>
+                    <li>
+                      <strong className="text-white">Secondary Dark</strong>
+                      <span className="text-faded ml-1.5 font-mono text-xs">
+                        #252525
+                      </span>
+                      <br />
+                      Cards, panels, and secondary surfaces layered on top of
+                      Primary Dark. Creates subtle depth without visible borders.
+                    </li>
+                    <li>
+                      <strong className="text-white">Faded</strong>
+                      <span className="text-faded ml-1.5 font-mono text-xs">
+                        #787878
+                      </span>
+                      <br />
+                      Captions, secondary text, timestamps, muted UI elements.
+                      Never for headings or primary content.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    PROPORTION
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    These darks should dominate &mdash; roughly 50&ndash;60% of
+                    any dark-themed layout.
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
+
+          {/* --- BRAND ACCENT --- */}
+          <div className="mb-24">
+            <div className="mb-8">
+              <p className="font-display text-sm text-logo-red tracking-widest mb-1">
+                COLOR ROLE
+              </p>
+              <h3 className="font-display text-3xl text-white tracking-wider mb-2">
+                BRAND ACCENT
+              </h3>
+              <p className="text-infield-tan">Logo Red</p>
+            </div>
+
+            <div className="grid md:grid-cols-5 gap-8">
+              <div className="md:col-span-3 space-y-4">
+                <div className="h-32 bg-logo-red rounded-lg flex items-end p-4">
+                  <span className="text-white font-mono text-xs">
+                    #843127 &mdash; Logo Red
+                  </span>
+                </div>
+                <div className="bg-white/5 p-6 rounded-lg">
+                  <p className="text-faded text-xs tracking-wider mb-4 font-display">
+                    ACCENT IN CONTEXT
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      <span className="text-infield-tan text-sm">
+                        Bullet points and list markers
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      <span className="text-infield-tan text-sm">
+                        Section classification labels
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      <span className="text-infield-tan text-sm">
+                        Call-to-action elements
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-4 h-1 bg-logo-red rounded-full w-1/3" />
+                </div>
+              </div>
+
+              <div className="md:col-span-2 space-y-6">
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHAT IT IS
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    The single accent color in the palette. A deep, warm red
+                    pulled from the logo. Not fire-engine red &mdash; it has
+                    brown undertones that tie it to the warm neutrals.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    HOW TO USE
+                  </h4>
+                  <ul className="text-infield-tan text-sm space-y-1.5">
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Logo and mark elements
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Bullet points, list markers, small accent details
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Calls to action (buttons, links)
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Section dividers and emphasis moments
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    HOW NOT TO USE
+                  </h4>
+                  <ul className="text-infield-tan text-sm space-y-1.5">
+                    <li className="flex items-start gap-2">
+                      <span className="text-faded mt-0.5">&#10007;</span>
+                      Never as a background for large areas
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-faded mt-0.5">&#10007;</span>
+                      Never as body text
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-faded mt-0.5">&#10007;</span>
+                      Never paired with other reds or bright colors
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    PROPORTION
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    Used sparingly &mdash; roughly 5&ndash;10% of any layout.
+                    It&apos;s the punctuation, not the sentence.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* --- WARM NEUTRALS --- */}
+          <div className="mb-24">
+            <div className="mb-8">
+              <p className="font-display text-sm text-logo-red tracking-widest mb-1">
+                COLOR ROLE
+              </p>
+              <h3 className="font-display text-3xl text-white tracking-wider mb-2">
+                WARM NEUTRALS
+              </h3>
+              <p className="text-infield-tan">
+                Infield Tan, Infield Light, Cream, Leather
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-5 gap-8">
+              <div className="md:col-span-3 space-y-3">
+                <div className="h-20 bg-leather rounded-lg flex items-end p-4">
+                  <span className="text-white font-mono text-xs">
+                    #5c4033 &mdash; Leather
+                  </span>
+                </div>
+                <div className="h-20 bg-infield-tan rounded-lg flex items-end p-4">
+                  <span className="text-brand-black font-mono text-xs">
+                    #d4c4a8 &mdash; Infield Tan
+                  </span>
+                </div>
+                <div className="h-20 bg-infield-light rounded-lg flex items-end p-4">
+                  <span className="text-brand-black font-mono text-xs">
+                    #e8dcc8 &mdash; Infield Light
+                  </span>
+                </div>
+                <div className="h-20 bg-cream rounded-lg flex items-end p-4">
+                  <span className="text-brand-black font-mono text-xs">
+                    #faf7f2 &mdash; Cream
+                  </span>
+                </div>
+              </div>
+
+              <div className="md:col-span-2 space-y-6">
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHAT THEY ARE
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    The warmth of the palette. Named for the materials and
+                    surfaces of baseball: infield dirt, leather gloves, dugout
+                    benches. These prevent the brand from feeling cold or
+                    corporate.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    HOW TO USE
+                  </h4>
+                  <ul className="text-infield-tan text-sm space-y-3">
+                    <li>
+                      <strong className="text-white">Cream</strong>
+                      <span className="text-faded ml-1.5 font-mono text-xs">
+                        #faf7f2
+                      </span>
+                      <br />
+                      Primary light background. The default &quot;white&quot;
+                      &mdash; never use pure white.
+                    </li>
+                    <li>
+                      <strong className="text-white">Infield Light</strong>
+                      <span className="text-faded ml-1.5 font-mono text-xs">
+                        #e8dcc8
+                      </span>
+                      <br />
+                      Callout cards, highlighted sections, subtle surface
+                      changes on light layouts.
+                    </li>
+                    <li>
+                      <strong className="text-white">Infield Tan</strong>
+                      <span className="text-faded ml-1.5 font-mono text-xs">
+                        #d4c4a8
+                      </span>
+                      <br />
+                      Secondary text on dark backgrounds, supporting details,
+                      label text.
+                    </li>
+                    <li>
+                      <strong className="text-white">Leather</strong>
+                      <span className="text-faded ml-1.5 font-mono text-xs">
+                        #5c4033
+                      </span>
+                      <br />
+                      Body text on light backgrounds, headings on cream, rich
+                      warm accent that anchors the warm neutrals.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    PROPORTION
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    These fill the remaining 30&ndash;40% of layouts, providing
+                    warmth between the darks and the accent red.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* --- PAIRING QUICK REFERENCE --- */}
+          <div className="border-t border-white/10 pt-16">
+            <h3 className="font-display text-xl text-white tracking-wider text-center mb-8">
+              PAIRING QUICK REFERENCE
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-brand-black border border-white/10 p-6 rounded-lg">
+                <h4 className="font-display text-sm text-white tracking-wider mb-4">
+                  DARK LAYOUTS
+                </h4>
+                <ul className="text-infield-tan text-sm space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Primary Dark background
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Secondary Dark cards and panels
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Faded for captions and secondary text
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Infield Tan for primary text
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Logo Red for accents
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-cream p-6 rounded-lg">
+                <h4 className="font-display text-sm text-brand-black tracking-wider mb-4">
+                  LIGHT LAYOUTS
+                </h4>
+                <ul className="text-leather text-sm space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Cream background
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Infield Light for cards and callouts
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Leather for body text
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Primary Dark for headings
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Logo Red for accents
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-faded text-xs text-center mt-6">
+              Never use pure white (#fff) or pure black (#000) as surface
+              colors. The palette is intentionally warm.
+            </p>
           </div>
         </div>
       </section>

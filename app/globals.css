@@ -8,9 +8,9 @@
 :root {
   /* Brand Colors */
   --color-black: #1a1a1a;
+  --color-secondary-dark: #252525;
+  --color-faded: #787878;
   --color-logo-red: #843127;
-  --color-logo-red-dark: #6a2820;
-  --color-logo-red-light: #a34234;
 
   /* Warm Neutrals */
   --color-infield-tan: #d4c4a8;
@@ -28,9 +28,9 @@
 @theme inline {
   /* Brand Colors */
   --color-brand-black: var(--color-black);
+  --color-secondary-dark: var(--color-secondary-dark);
+  --color-faded: var(--color-faded);
   --color-logo-red: var(--color-logo-red);
-  --color-logo-red-dark: var(--color-logo-red-dark);
-  --color-logo-red-light: var(--color-logo-red-light);
 
   /* Warm Neutrals */
   --color-infield-tan: var(--color-infield-tan);
