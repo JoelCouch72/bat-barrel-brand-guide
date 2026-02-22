@@ -333,164 +333,616 @@ export default function BrandGuide() {
         <div className="max-w-5xl mx-auto">
           <SectionHeader
             title="LOGO SYSTEM"
-            subtitle="Logo variants and their applications"
+            subtitle="Logo variants, usage rules, and application guidance"
             dark
           />
 
-          {/* Full Logo — Primary, displayed large */}
-          <div className="bg-white/5 p-12 rounded-lg text-center mb-16">
-            <div className="h-64 flex items-center justify-center mb-8">
-              <Image
-                src="/logo/full-logo-white.svg"
-                alt="Full Logo"
-                width={500}
-                height={500}
-                className="max-h-56 w-auto"
-              />
-            </div>
-            <h4 className="font-display text-xl text-white tracking-wider mb-2">
-              FULL LOGO
-            </h4>
-            <p className="text-infield-tan text-sm">
-              Primary logo — signage, headers, hero areas
+          {/* The One Rule */}
+          <div className="bg-white/5 border border-white/10 p-8 rounded-lg mb-24">
+            <h3 className="font-display text-lg text-logo-red tracking-wider mb-3">
+              THE ONE RULE
+            </h3>
+            <p className="text-infield-tan leading-relaxed">
+              The background of the logo must match the background it sits on.
+              No exceptions. Every logo variant below includes specific guidance
+              on which backgrounds it belongs on. If you remember nothing else
+              from this guide, remember this.
             </p>
           </div>
 
-          {/* Secondary Logo Variants */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {/* B-N-B Wordmark */}
-            <div className="bg-white/5 p-8 rounded-lg text-center">
-              <div className="h-32 flex items-center justify-center mb-6">
-                <Image
-                  src="/logo/bnb-logo-white.svg"
-                  alt="B-N-B Wordmark"
-                  width={250}
-                  height={100}
-                  className="max-h-24 w-auto"
-                />
-              </div>
-              <h4 className="font-display text-lg text-white tracking-wider mb-2">
-                B-N-B WORDMARK
-              </h4>
-              <p className="text-infield-tan text-sm">
-                Apparel, social, medium applications
+          {/* --- PRIMARY LOGO --- */}
+          <div className="mb-24">
+            <div className="mb-8">
+              <p className="font-display text-sm text-logo-red tracking-widest mb-1">
+                PRIMARY LOGO
+              </p>
+              <h3 className="font-display text-3xl text-white tracking-wider mb-2">
+                FULL LOGO
+              </h3>
+              <p className="text-infield-tan">
+                The complete Bat &amp; Barrel mark
               </p>
             </div>
 
-            {/* Stencil */}
-            <div className="bg-white/5 p-8 rounded-lg text-center">
-              <div className="h-32 flex items-center justify-center mb-6">
-                <Image
-                  src="/logo/stencil.png"
-                  alt="Stencil"
-                  width={120}
-                  height={150}
-                  className="max-h-24 w-auto"
-                />
-              </div>
-              <h4 className="font-display text-lg text-white tracking-wider mb-2">
-                STENCIL
-              </h4>
-              <p className="text-infield-tan text-sm">
-                Favicons, app icons, small marks
-              </p>
-            </div>
+            <div className="grid md:grid-cols-5 gap-8">
+              <div className="md:col-span-3 space-y-4">
+                <div className="bg-brand-black border border-white/10 p-12 rounded-lg flex items-center justify-center">
+                  <Image
+                    src="/logo/full-logo-white.svg"
+                    alt="Full logo — white variant for dark backgrounds"
+                    width={400}
+                    height={400}
+                    className="max-h-64 w-auto"
+                  />
+                </div>
+                <p className="text-white/40 text-xs text-center tracking-wider">
+                  ON DARK BACKGROUNDS
+                </p>
 
-            {/* Full Logo Training */}
-            <div className="bg-white/5 p-8 rounded-lg text-center">
-              <div className="h-32 flex items-center justify-center mb-6">
-                <Image
-                  src="/logo/full-logo-training-white-txt.png"
-                  alt="Full Logo Training"
-                  width={200}
-                  height={200}
-                  className="max-h-24 w-auto"
-                />
+                <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
+                  <Image
+                    src="/logo/full-logo-black.svg"
+                    alt="Full logo — dark variant for light backgrounds"
+                    width={400}
+                    height={400}
+                    className="max-h-64 w-auto"
+                  />
+                </div>
+                <p className="text-white/40 text-xs text-center tracking-wider">
+                  ON LIGHT BACKGROUNDS
+                </p>
               </div>
-              <h4 className="font-display text-lg text-white tracking-wider mb-2">
-                FULL LOGO TRAINING
-              </h4>
-              <p className="text-infield-tan text-sm">
-                Training programs, facilities, sub-brand
-              </p>
+
+              <div className="md:col-span-2 space-y-6">
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHAT IT IS
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    The full Bat &amp; Barrel mark &mdash; baseball, crossed
+                    bats, and script wordmark. This is the primary identity and
+                    should be the first choice whenever space and context allow.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHEN TO USE
+                  </h4>
+                  <ul className="text-infield-tan text-sm space-y-1.5">
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Facility signage and entrance
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Website headers and hero sections
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Large-format print (posters, banners, wall graphics)
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Anywhere the brand is being introduced for the first time
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    BACKGROUND RULES
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    Use the white variant on dark backgrounds (black, leather,
+                    dark photography). Use the dark variant on light backgrounds
+                    (cream, white, infield tan). Never place this logo on a red
+                    background.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    MINIMUM SIZE
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    120px wide on screen. 1.5&quot; wide in print. The crossed
+                    bats and stitching detail degrade at smaller sizes &mdash;
+                    switch to the Wordmark or Stencil below that threshold.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Training Logo — wide format */}
-          <div className="bg-white/5 p-8 rounded-lg text-center mb-16">
-            <div className="h-40 flex items-center justify-center mb-6">
+          {/* --- WORDMARK --- */}
+          <div className="mb-24">
+            <div className="mb-8">
+              <p className="font-display text-sm text-logo-red tracking-widest mb-1">
+                BRAND LOGO
+              </p>
+              <h3 className="font-display text-3xl text-white tracking-wider mb-2">
+                WORDMARK
+              </h3>
+              <p className="text-infield-tan">The text-only mark</p>
+            </div>
+
+            <div className="grid md:grid-cols-5 gap-8">
+              <div className="md:col-span-3 space-y-4">
+                <div className="bg-brand-black border border-white/10 p-10 rounded-lg flex items-center justify-center">
+                  <Image
+                    src="/logo/bnb-logo-white.svg"
+                    alt="Wordmark — white variant for dark backgrounds"
+                    width={350}
+                    height={120}
+                    className="max-h-20 w-auto"
+                  />
+                </div>
+                <p className="text-white/40 text-xs text-center tracking-wider">
+                  ON DARK BACKGROUNDS
+                </p>
+
+                <div className="rounded-lg overflow-hidden">
+                  <Image
+                    src="/logo/bnb-logo-black.svg"
+                    alt="Wordmark — self-contained black lockup"
+                    width={600}
+                    height={340}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <p className="text-white/40 text-xs text-center tracking-wider">
+                  SELF-CONTAINED BLACK LOCKUP
+                </p>
+
+                <div className="rounded-lg overflow-hidden">
+                  <Image
+                    src="/logo/bnb-logo-red.svg"
+                    alt="Wordmark — self-contained red lockup"
+                    width={600}
+                    height={230}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <p className="text-white/40 text-xs text-center tracking-wider">
+                  SELF-CONTAINED RED LOCKUP
+                </p>
+              </div>
+
+              <div className="md:col-span-2 space-y-6">
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHAT IT IS
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    The &quot;Bat &amp; Barrel&quot; script wordmark without the
+                    baseball or bats. A streamlined alternative that carries the
+                    brand voice through its hand-lettered character.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHEN TO USE
+                  </h4>
+                  <ul className="text-infield-tan text-sm space-y-1.5">
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Apparel and embroidery
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Social media profiles and cover images
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Medium-format applications where the full mark is too
+                      detailed
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Repeat touchpoints where brand recognition is established
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    BACKGROUND RULES
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    The transparent wordmark works on dark backgrounds. For other
+                    contexts, use one of the self-contained lockups. The
+                    <strong className="text-white"> black lockup</strong> places
+                    the wordmark on a built-in black background for guaranteed
+                    consistency. The
+                    <strong className="text-white"> red lockup</strong> is the
+                    only logo variant approved for a red background &mdash; use
+                    it for accent moments where brand energy is needed.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    MINIMUM SIZE
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    100px wide on screen. 1&quot; wide in print. The script
+                    remains legible at smaller sizes than the full logo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* --- STENCIL --- */}
+          <div className="mb-24">
+            <div className="mb-8">
+              <p className="font-display text-sm text-logo-red tracking-widest mb-1">
+                LOGO MARK
+              </p>
+              <h3 className="font-display text-3xl text-white tracking-wider mb-2">
+                STENCIL
+              </h3>
+              <p className="text-infield-tan">The compact brand mark</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-brand-black border border-white/10 p-10 rounded-lg flex items-center justify-center">
+                    <Image
+                      src="/logo/stencil.png"
+                      alt="Stencil on dark background"
+                      width={150}
+                      height={186}
+                      className="max-h-36 w-auto"
+                    />
+                  </div>
+                  <div className="bg-cream p-10 rounded-lg flex items-center justify-center">
+                    <Image
+                      src="/logo/stencil.png"
+                      alt="Stencil on light background"
+                      width={150}
+                      height={186}
+                      className="max-h-36 w-auto"
+                    />
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <p className="text-white/40 text-xs text-center tracking-wider">
+                    ON DARK BACKGROUNDS
+                  </p>
+                  <p className="text-white/40 text-xs text-center tracking-wider">
+                    ON LIGHT BACKGROUNDS
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHAT IT IS
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    A stylized script &quot;B&quot; derived from the wordmark.
+                    The simplest expression of the Bat &amp; Barrel identity
+                    &mdash; a single letterform that works at any size.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHEN TO USE
+                  </h4>
+                  <ul className="text-infield-tan text-sm space-y-1.5">
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Favicons and browser tabs
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      App icons and social media avatars
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Watermarks
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Embossed or debossed applications (leather, metal, fabric)
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    BACKGROUND RULES
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    The stencil is a single-color outline mark. On dark
+                    backgrounds, the white fill reads clearly. On light
+                    backgrounds, the black outline carries the shape. Avoid
+                    placing on busy photography without a solid background
+                    behind it.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    MINIMUM SIZE
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    24px &mdash; this is the go-to mark at micro scale.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* --- TRAINING SUB-BRAND DIVIDER --- */}
+          <div className="border-t border-white/10 pt-16 mt-8 mb-16">
+            <h3 className="font-display text-2xl text-infield-tan tracking-wider text-center mb-2">
+              TRAINING SUB-BRAND
+            </h3>
+            <p className="text-white/50 text-center text-sm max-w-2xl mx-auto">
+              The following variants include the &quot;Baseball &amp; Softball
+              Training Facility&quot; descriptor. Use these when the context
+              requires clarifying what Bat &amp; Barrel is &mdash; particularly
+              for audiences encountering the brand for the first time.
+            </p>
+          </div>
+
+          {/* --- FULL TRAINING LOGO --- */}
+          <div className="mb-24">
+            <div className="mb-8">
+              <p className="font-display text-sm text-logo-red tracking-widest mb-1">
+                TRAINING VARIANT
+              </p>
+              <h3 className="font-display text-3xl text-white tracking-wider mb-2">
+                FULL TRAINING LOGO
+              </h3>
+              <p className="text-infield-tan">
+                Primary mark with facility descriptor
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-5 gap-8">
+              <div className="md:col-span-3 space-y-4">
+                <div className="bg-brand-black border border-white/10 p-10 rounded-lg flex items-center justify-center">
+                  <Image
+                    src="/logo/full-logo-training-white-txt.png"
+                    alt="Full training logo — white text for dark backgrounds"
+                    width={400}
+                    height={400}
+                    className="max-h-56 w-auto"
+                  />
+                </div>
+                <p className="text-white/40 text-xs text-center tracking-wider">
+                  ON DARK BACKGROUNDS
+                </p>
+
+                <div className="bg-cream p-10 rounded-lg flex items-center justify-center">
+                  <Image
+                    src="/logo/full-logo-training-white.png"
+                    alt="Full training logo — dark text for light backgrounds"
+                    width={400}
+                    height={400}
+                    className="max-h-56 w-auto"
+                  />
+                </div>
+                <p className="text-white/40 text-xs text-center tracking-wider">
+                  ON LIGHT BACKGROUNDS
+                </p>
+              </div>
+
+              <div className="md:col-span-2 space-y-6">
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHAT IT IS
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    The full Bat &amp; Barrel mark with &quot;Baseball &amp;
+                    Softball Training Facility&quot; set beneath it. This
+                    variant communicates both the brand identity and the nature
+                    of the business in a single lockup.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    WHEN TO USE
+                  </h4>
+                  <ul className="text-infield-tan text-sm space-y-1.5">
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      First-impression contexts: trade shows, sponsorship
+                      banners, directory listings
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Print advertising where the audience may not know the
+                      brand
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Facility exterior signage
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-logo-red mt-0.5">&#8226;</span>
+                      Letterhead and official documents
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    BACKGROUND RULES
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    Use the white-text variant on dark backgrounds. Use the
+                    dark-text variant on light backgrounds. The background must
+                    be a solid, exact color match. Do not float on photography
+                    or gradients.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                    MINIMUM SIZE
+                  </h4>
+                  <p className="text-infield-tan text-sm leading-relaxed">
+                    200px wide on screen. 2.5&quot; wide in print. The
+                    descriptor text must remain legible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* --- TRAINING WORDMARK --- */}
+          <div className="mb-24">
+            <div className="mb-8">
+              <p className="font-display text-sm text-logo-red tracking-widest mb-1">
+                TRAINING VARIANT
+              </p>
+              <h3 className="font-display text-3xl text-white tracking-wider mb-2">
+                TRAINING WORDMARK
+              </h3>
+              <p className="text-infield-tan">Wide-format training mark</p>
+            </div>
+
+            <div className="bg-cream p-10 rounded-lg flex items-center justify-center mb-4">
               <Image
                 src="/logo/training-logo-black.png"
-                alt="Training Logo"
+                alt="Training wordmark — wide format on light background"
                 width={600}
-                height={250}
-                className="max-h-32 w-auto"
+                height={150}
+                className="max-h-28 w-auto"
               />
             </div>
-            <h4 className="font-display text-lg text-white tracking-wider mb-2">
-              TRAINING LOGO
-            </h4>
-            <p className="text-infield-tan text-sm">
-              Wide-format training mark — print materials, banners
+            <p className="text-white/40 text-xs text-center tracking-wider mb-8">
+              ON LIGHT BACKGROUNDS
             </p>
+
+            <div className="bg-white/5 p-8 rounded-lg">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                      WHAT IT IS
+                    </h4>
+                    <p className="text-infield-tan text-sm leading-relaxed">
+                      A wide-format rendering of the &quot;Bat &amp;
+                      Barrel&quot; script wordmark optimized for horizontal
+                      applications. This is a sub-brand variant intended for
+                      training-specific materials.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                      WHEN TO USE
+                    </h4>
+                    <ul className="text-infield-tan text-sm space-y-1.5">
+                      <li className="flex items-start gap-2">
+                        <span className="text-logo-red mt-0.5">&#8226;</span>
+                        Banners and fence signs at the facility
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-logo-red mt-0.5">&#8226;</span>
+                        Training program print materials and handouts
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-logo-red mt-0.5">&#8226;</span>
+                        Wide-format digital ads (leaderboard, banner)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-logo-red mt-0.5">&#8226;</span>
+                        Uniform or apparel applications where horizontal space
+                        is available
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                      BACKGROUND RULES
+                    </h4>
+                    <p className="text-infield-tan text-sm leading-relaxed">
+                      This variant is provided in dark colorway only. Place
+                      exclusively on light backgrounds (cream, white, infield
+                      tan). Do not attempt to invert or recolor.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-display text-sm text-white tracking-wider mb-2">
+                      MINIMUM SIZE
+                    </h4>
+                    <p className="text-infield-tan text-sm leading-relaxed">
+                      250px wide on screen. 3&quot; wide in print. The wide
+                      aspect ratio requires generous horizontal space.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Logo on Backgrounds */}
-          <h3 className="font-display text-xl text-infield-tan tracking-wider mb-6">
-            ON BACKGROUNDS
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-cream p-12 rounded-lg flex items-center justify-center">
-              <Image
-                src="/logo/full-logo-black.svg"
-                alt="Full logo on light background"
-                width={280}
-                height={280}
-                className="max-h-28 w-auto"
-              />
-            </div>
-            <div className="bg-brand-black border border-white/10 p-12 rounded-lg flex items-center justify-center">
-              <Image
-                src="/logo/full-logo-white.svg"
-                alt="Full logo on dark background"
-                width={280}
-                height={280}
-                className="max-h-28 w-auto"
-              />
-            </div>
-            <div className="bg-logo-red p-12 rounded-lg flex items-center justify-center">
-              <Image
-                src="/logo/bnb-logo-white.svg"
-                alt="Wordmark on red background"
-                width={280}
-                height={100}
-                className="max-h-16 w-auto"
-              />
-            </div>
-          </div>
-
-          {/* Self-Contained Lockups */}
-          <h3 className="font-display text-xl text-infield-tan tracking-wider mb-6">
-            LOCKUP VARIANTS
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src="/logo/bnb-logo-black.svg"
-                alt="B-N-B Logo Black lockup"
-                width={600}
-                height={340}
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src="/logo/bnb-logo-red.svg"
-                alt="B-N-B Logo Red lockup"
-                width={600}
-                height={340}
-                className="w-full h-auto"
-              />
+          {/* --- BACKGROUND QUICK REFERENCE --- */}
+          <div className="border-t border-white/10 pt-16">
+            <h3 className="font-display text-xl text-white tracking-wider text-center mb-8">
+              BACKGROUND QUICK REFERENCE
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-brand-black border border-white/10 p-6 rounded-lg">
+                <h4 className="font-display text-sm text-white tracking-wider mb-4">
+                  DARK BACKGROUNDS
+                </h4>
+                <ul className="text-infield-tan text-sm space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Full Logo (white)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Wordmark (white)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Stencil
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Full Training Logo (white text)
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-cream p-6 rounded-lg">
+                <h4 className="font-display text-sm text-brand-black tracking-wider mb-4">
+                  LIGHT BACKGROUNDS
+                </h4>
+                <ul className="text-leather text-sm space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Full Logo (dark)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Stencil
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Training Wordmark
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-logo-red mt-0.5">&#8226;</span>
+                    Full Training Logo (dark text)
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-logo-red p-6 rounded-lg">
+                <h4 className="font-display text-sm text-white tracking-wider mb-4">
+                  RED BACKGROUND
+                </h4>
+                <ul className="text-white/90 text-sm space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-white mt-0.5">&#8226;</span>
+                    Wordmark (red lockup) only
+                  </li>
+                </ul>
+                <p className="text-white/60 text-xs mt-4 leading-relaxed">
+                  No other logo variant is approved for red backgrounds.
+                </p>
+              </div>
             </div>
           </div>
         </div>
