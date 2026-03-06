@@ -5,9 +5,9 @@
    Design Tokens & Theme
    ============================================ */
 
-:root {
+@theme inline {
   /* Brand Colors */
-  --color-black: #1a1a1a;
+  --color-brand-black: #1a1a1a;
   --color-secondary-dark: #252525;
   --color-faded: #787878;
   --color-logo-red: #843127;
@@ -25,29 +25,10 @@
   --color-white: #ffffff;
 }
 
-@theme inline {
-  /* Brand Colors */
-  --color-brand-black: var(--color-black);
-  --color-secondary-dark: var(--color-secondary-dark);
-  --color-faded: var(--color-faded);
-  --color-logo-red: var(--color-logo-red);
-
-  /* Warm Neutrals */
-  --color-infield-tan: var(--color-infield-tan);
-  --color-infield-light: var(--color-infield-light);
-  --color-leather: var(--color-leather);
-  --color-cream: var(--color-cream);
-
-  /* Fonts */
-  --font-display: var(--font-display);
-  --font-script: var(--font-script);
-  --font-body: var(--font-body);
-}
-
 body {
   font-family: var(--font-body), system-ui, sans-serif;
   background: var(--color-cream);
-  color: var(--color-black);
+  color: var(--color-brand-black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -72,7 +53,7 @@ body {
 /* Selection */
 ::selection {
   background: var(--color-infield-tan);
-  color: var(--color-black);
+  color: var(--color-brand-black);
 }
 
 /* Smooth scrolling */
